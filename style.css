@@ -1,0 +1,16 @@
+h1 {
+font-weight: lighter;
+}
+
+body{
+  width: 560px;
+}
+
+.post {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+img {
+  width: 560px;
+}
