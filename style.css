@@ -3,7 +3,7 @@ font-weight: lighter;
 }
 
 body{
-  max-width: 560px;
+  max-width: 640px;
 }
 
 .post {
@@ -12,5 +12,5 @@ body{
 }
 
 img {
-  width: 560px;
+  width: 640px;
 }
