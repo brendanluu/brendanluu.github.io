@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+body{
+  background-color: red;
+}
+
+@media (min-width: 40rem) {
+  body {
+    background-color: blue;
+  }
+
+@media (min-width: 50rem) {
+  body {
+    background-color: green;
+  }
