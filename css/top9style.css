@@ -1,31 +1,64 @@
+body{
+  margin: 0px;
+  background: black;
+}
+
+.vidwrapper{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .video-background {
   background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0; left: 0;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  pointer-events: all;
+  width: 100%;
   z-index: -99;
 }
 .video-background iframe {
   position: absolute;
   top: 0;
   left: 0;
+  pointer-events: all;
   width: 100%;
+  height: 100%;
+}
+
+.homesml{
+  display: block;
+  margin-top: 24px;
+  text-decoration: underline;
+}
+
+.homebig{
+  display: none;
 }
 
 .projects{
-  display: flex; display: -webkit-flex;
+  display: block;
   flex-direction: row; -webkit-flex-direction: row;
   flex-wrap: wrap; -webkit-flex-wrap: wrap;
   justify-content: center; -webkit-justify-content: center;
-  width:65%;
+  width:80%;
   margin:0 auto;
-  z-index: 1;
-  color: white;
+  position: relative;
+  padding-top: 56.25%;
+  z-index: 0;
+  color: black;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .nav {
   position: fixed;
   width: 128px;
+  display: none;
 }
 
 .gifblocker{
@@ -50,11 +83,22 @@ a{
   text-decoration: none;
 }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 45rem) {
+
+  body{
+    margin: 10px;
+  }
+
+  .vidwrapper{
+    position: relative;
+    z-index: -1;
+  }
 
   .video-background {
     background: #000;
     position: fixed;
+    height: 100%;
+    padding-bottom: 0;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -99;
   }
@@ -65,5 +109,33 @@ a{
     width: 100%;
     height: 100%;
   }
+
+  .projects{
+    display: flex; display: -webkit-flex;
+    flex-direction: row; -webkit-flex-direction: row;
+    flex-wrap: wrap; -webkit-flex-wrap: wrap;
+    justify-content: center; -webkit-justify-content: center;
+    width: 65%;
+    margin:0 auto;
+    padding-top: 0;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+
+  .nav {
+    position: fixed;
+    width: 128px;
+    display: block;
+  }
+  .homesml{
+    display: none;
+  }
+
+  .homebig{
+    display: block;
+    text-decoration: underline;
+  }
+
 
 }
